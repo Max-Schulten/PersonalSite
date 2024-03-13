@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var navItems = document.querySelectorAll('.nav-link');
     var tabs = document.querySelectorAll('.tab-pane')

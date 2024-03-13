@@ -1,0 +1,30 @@
+.btn {
+    background-color: #D96C6C;
+    color: #F2EFDF;
+}
+.offcanvas {
+    color: #F2EFDF;
+    background: #733C3C;
+}
+
+body {
+    background-color: #733C3C;
+}
+
+.navbar {
+    background-color: #F2EFDF;
+}
+
+.navbar > a {
+    color: #0D0D0D;
+}
+
+.jumbotron {
+    background-color: #D96C6C;
+    color: #F2EFDF
+}
+
+.list-group > a {
+    background-color: #D96C6C;
+    border-color:#A65656
+}
