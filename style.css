@@ -1,30 +1,133 @@
-.btn {
-    background-color: #D96C6C;
-    color: #F2EFDF;
+@font-face {
+    font-family: 'defaultFont';
+    src: url(font.otf);
 }
+@font-face {
+    font-family: 'bold';
+    src:url(fontbold.otf)
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'bold' !important;
+}
+
+* {
+    font-family: 'defaultFont';
+    --lightblue: #D4F5F5;
+    --blue: #93B7BE;
+    --darkblue: #3B3B58;
+    --grey: #8C9A9E
+}
+
+footer {
+    background-color: var(--darkblue);
+}
+
+.socials > p {
+    color: var(--lightblue);
+}
+
+.offcanvas-title{
+    color: var(--lightblue);
+}
+
 .offcanvas {
-    color: #F2EFDF;
-    background: #733C3C;
+    color: var(--darkblue);
+    background: var(--grey);
 }
 
 body {
-    background-color: #733C3C;
+    background-color: var(--grey);
 }
 
 .navbar {
-    background-color: #F2EFDF;
+    background-color: var(--darkblue);
 }
 
-.navbar > a {
-    color: #0D0D0D;
+.navbar-brand {
+    color: var(--lightblue) !important;
+    font-family: 'bold';
+}
+
+.nav-link {
+    color: var(--blue) !important;
+}
+
+.nav-link.active, .nav-link:hover{
+    color: var(--lightblue) !important;
+    transition: 0.3s;
 }
 
 .jumbotron {
-    background-color: #D96C6C;
-    color: #F2EFDF
+    color: var(--lightblue);
+    background-color: var(--darkblue);
 }
 
-.list-group > a {
-    background-color: #D96C6C;
-    border-color:#A65656
+
+.card-header {
+    background-color: var(--darkblue);
+    color: var(--lightblue);
 }
+
+.card-text {
+    color: var(--lightblue);
+}
+
+.card {
+    border: none;
+    background-color: var(--darkblue);
+}
+
+.badge {
+    background-color: var(--darkblue);
+    color: var(--lightblue); 
+}
+
+.bg-warning {
+    color: black;
+}
+
+.social{
+    background-color: var(--lightblue);
+    color: black;
+}
+
+.social:hover{
+    transition: 0.5s;
+    color: var(--lightblue);
+    background-color: black;
+}
+
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: var(--lightblue);
+    --button_outline_color: black;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }

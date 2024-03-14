@@ -6,10 +6,10 @@ function Canvas(props) {
             </div>
             <div class="offcanvas-body">
                 {props.wip === "true" &&
-                    <span class="badge bg-warning"><span class="fa fa-person-digging"></span>Work in Progress</span>
+                    <span class="badge bg-warning mb-2"><span class="fa fa-person-digging"></span>Work in Progress</span>
                 }
-                <p>{props.body}</p>
-                <a href={props.link}><button class="btn" type="button"><span class="fa-solid fa-clapperboard"></span>&nbsp;Behind The Scenes</button></a>
+                <p class="mb-3">{props.body}</p>
+                <button class="w-100"><a href={props.link}><i class="button_top fa-solid fa-laptop-code"></i></a></button>
             </div>
         </div>
     );
