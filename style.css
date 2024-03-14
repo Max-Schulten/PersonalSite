@@ -89,7 +89,15 @@ body {
 
 .social{
     background-color: var(--lightblue);
-    color: black;
+    color: black !important;
+}
+
+.social > a{
+    color:black;
+}
+
+.social > a :hover {
+    color: var(--lightblue);
 }
 
 .social:hover{
