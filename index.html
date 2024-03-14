@@ -20,7 +20,7 @@
 
 <body>
     <!--Navbar to navigate page as a whole-->
-    <nav id="navbar" class="navbar navbar-expand-sm stick-top">
+    <nav id="navbar" class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <h3 class="navbar-brand"><i class="fa-solid fa-cubes"></i>&nbsp; Max Schulten</h3>
 
@@ -39,20 +39,26 @@
     <div class="tab-content">
         <!--Home tab-->
         <div id="home" class="container tab-pane active"><br>
-            <div class="row">
-                <div class="col-sm-4 jumbotron p-4 rounded">
-                    <h1 class="display-6">Welcome</h1>
-                    <p class="lead">My name is Maximilian (Max) and I am a computer science B.S. and Mathematics B.A.
-                        student at Case Western
-                        Reserve University in Cleveland, OH. I am pursuing a concentration in artifical intelligence,
-                        and aspire to work with AI.
-                    </p>
+            <div class="row mb-5">
+                <div class="col-sm-4 mt-3">
+                    <div class="col-sm-12 jumbotron p-4 h-4 rounded">
+                        <h1 class="display-6">Welcome</h1>
+                        <p class="lead">My name is Maximilian (Max) and I am a computer science B.S. and Mathematics
+                            B.A.
+                            student at Case Western
+                            Reserve University in Cleveland, OH. I am pursuing a concentration in artifical
+                            intelligence,
+                            and aspire to work with AI.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-sm-2"></div>
-                <div class="col-sm-6">
+                <div class="mt-3 col-sm-6">
                     <div class="card">
-                        <div class="card-header">What have you done in the past?</div>
-                        <div class="card-body">
+                        <a href="#past" data-bs-toggle="collapse">
+                            <div class="card-header">What have you done in the past?</div>
+                        </a>
+                        <div id="past" class="collapse card-body">
                             <div class="card-text">I interned at Rathbone Group LLC. from 05/2022 to 09/2023. I
                                 maintained a database auto-filling legal documents integral to the success of the firm
                                 using JST CollectMax and Microsoft Mail Merge.
@@ -64,11 +70,25 @@
                     </div>
                     <br>
                     <div class="card">
-                        <div class="card-header">What are you doing right now?</div>
-                        <div class="card-body">
+                        <a href="#rn" data-bs-toggle="collapse">
+                            <div class="card-header">What are you doing right now?</div>
+                        </a>
+                        <div id="rn" class="collapse card-body">
                             <div class="card-text">I am currently a second year student at CWRU. I am an undergraduate
                                 teaching assistant for Dr. Shuai Xu's Discrete Mathematics course where I am responsible
                                 for transcribing every lecture into LaTeX.</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <a href="#skills" data-bs-toggle="collapse">
+                            <div class="card-header">What skills do you bring to the table?</div>
+                        </a>
+                        <div id="skills" class="collapse card-body">
+                            <div class="card-text">I have good experience in all of the rudimentary concepts of computer science, including but not limited to: OOP, OS, Algorithms, 
+                                Data Structures, etc... As for specifics, I have experience in Full-Stack Web Development (HTML, CSS, Bootstrap, Jquery, React, JS), Python, Java. I also 
+                                happen to be a native German and English speaker with 6+ years of experience in French. 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,17 +135,22 @@
     <script type="text/babel" src="projectcanvas.js"></script>
 
 
-
+    <footer class="text-center mt-5">
+        <div class="socials container">
+            <p class="mt-3">Connect with me</p>
+            <button class="mt-1 social rounded-circle"><a href="https://github.com/Max-Schulten" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></button>
+            <button class="mt-1 social rounded-circle"><a
+                    href="https://www.linkedin.com/in/maximilian-schulten-b78099271/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></button>
+            <button class="mt-1 mb-3 social rounded-circle"><a href="mailto:maximilianschulten1@gmail.com"
+                    target="_blank" class="fa-solid fa-envelope"></i></a></button>
+        </div>
+    </footer>
 </body>
 
 <!-- Footer -->
-<footer class="text-center fixed-bottom">
-    <div class="socials">
-        <p class="mt-3">Connect with me</p>
-        <button class="mt-1 social rounded-circle"><a href="https://github.com/Max-Schulten" target="_blank"><i class="fa-brands fa-github"></i></a></button>
-        <button class="mt-1 social rounded-circle"><a href="https://www.linkedin.com/in/maximilian-schulten-b78099271/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></button>
-        <button class="mt-1 mb-3 social rounded-circle"><a href="mailto:maximilianschulten1@gmail.com" target="_blank" class="fa-solid fa-envelope"></i></a></button>
-    </div>
-</footer>
+
+
 
 </html>

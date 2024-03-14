@@ -3,6 +3,24 @@ $(document).ready(function() {
     var navItems = document.querySelectorAll('.nav-link');
     var tabs = document.querySelectorAll('.tab-pane')
 
+    if ($("body").height() > $(window).height()) {
+        $("footer").removeClass('fixed-bottom');
+        $("footer").addClass('sticky-bottom');
+    } else {
+        $("footer").addClass('fixed-bottom');
+        $("footer").removeClass('sticky-bottom');
+    }
+    
+    setInterval(() => {
+        if ($("body").height() > $(window).height()) {
+            $("footer").removeClass('fixed-bottom');
+            $("footer").addClass('sticky-bottom');
+        } else {
+            $("footer").addClass('fixed-bottom');
+            $("footer").removeClass('sticky-bottom');
+        }
+      }, 500);
+
     navItems.forEach(function(item) {
         item.addEventListener('click', function() {
         // Remove active class from all nav-items
@@ -27,3 +45,15 @@ $(document).ready(function() {
         });
     });
 })
+
+
+$(window).on('resize', function(){
+    if ($("body").height() > $(window).height()) {
+        $("footer").removeClass('fixed-bottom');
+        $("footer").addClass('sticky-bottom');
+    } else {
+        $("footer").addClass('fixed-bottom');
+        $("footer").removeClass('sticky-bottom');
+    }
+});
+
