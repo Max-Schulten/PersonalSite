@@ -99,20 +99,31 @@ body {
 .social{
     background-color: var(--lightblue);
     color: black !important;
+    transition: transform ease 300ms;
 }
 
 .social > a{
     color:black;
 }
 
-.social > a :hover {
-    color: var(--lightblue);
+.social:hover{
+    transition: 0.4s;
+    background-color: black;
+    & * {
+        color:var(--lightblue);
+    }
 }
 
-.social:hover{
-    transition: 0.5s;
-    color: var(--lightblue);
-    background-color: black;
+.card-header > i{
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.card-header > i.down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
 }
 
 button {
@@ -126,6 +137,7 @@ button {
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
   }
+
   
   .button_top {
     display: block;
